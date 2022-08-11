@@ -37,22 +37,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //主圖片圓角及加框
         aliceImage.layer.cornerRadius = 50
-        aliceImage.layer.borderWidth = 4
+        aliceImage.layer.borderWidth = 5
         aliceImage.layer.borderColor = UIColor.black.cgColor
         //背景圖圓角
         backgroundImage.layer.cornerRadius = 50
         //圓形按鈕
         randomButton.layer.cornerRadius = 50
         defaultButton.layer.cornerRadius = 50
+//        randomButton.layer.borderWidth = 3
+//        randomButton.layer.borderColor = UIColor.black.cgColor
         
         //slider小圓點圖案
-        let heartImage = UIImage(systemName: "suit.heart.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 35))
+        let heartImage = UIImage(systemName: "suit.heart.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 32))
         redSlider.setThumbImage(heartImage, for: .normal)
-        let clubImage = UIImage(systemName: "suit.club.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 38))
+        let clubImage = UIImage(systemName: "suit.club.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 35))
         greenSlider.setThumbImage(clubImage, for: .normal)
-        let spadeImage = UIImage(systemName: "suit.spade.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 38))
+        let spadeImage = UIImage(systemName: "suit.spade.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 35))
         blueSlider.setThumbImage(spadeImage, for: .normal)
-        let diamondImage = UIImage(systemName: "suit.diamond.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 40))
+        let diamondImage = UIImage(systemName: "suit.diamond.fill", withConfiguration: UIImage.SymbolConfiguration(pointSize: 37))
         alphaSlider.setThumbImage(diamondImage, for: .normal)
     }
 
